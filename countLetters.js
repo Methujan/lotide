@@ -11,11 +11,11 @@ const countLetters = function(sentence) {
 
   for(const letter of sentence){
 
-    if(letter !== ' '){
-      if(results[letter]){
-        results[letter] += 1;
+    if(letter !== ' '){ // if it is not a space
+      if(results[letter]){ // if there is a letter
+        results[letter] += 1; // adds on to the count if it exists
       } else {
-        results[letter] = 1;
+        results[letter] = 1; //makes a new count
       }
     }
 
