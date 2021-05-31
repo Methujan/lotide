@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} ===  ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const tail = function(array) {
   if (array === null) {
     return undefined;
@@ -17,6 +9,4 @@ const tail = function(array) {
 };
 
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-console.log(tail(words)); // Prints the everything except the first element: Prints ["Lighthouse", "Labs"]
-assertEqual(words.length, 3); // original array should still have 3 elements!
+module.exports = tail;
