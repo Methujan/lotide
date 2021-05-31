@@ -2,7 +2,7 @@ const findKey = require('../findKey');
 const assert = require('chai').assert;
 
 describe("#countLetters", () => {
-  it("returns 1 for [\"l\"]", () => {
+  it("returns \'noma\' for x => x.starts ===2", () => {
     assert.strictEqual(findKey({
       "Blue Hill": { stars: 1 },
       "Akaleri":   { stars: 3 },
